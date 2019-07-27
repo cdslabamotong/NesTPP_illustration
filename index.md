@@ -6,7 +6,7 @@ title: An illustration for NesTPP
 
 ---
 
-<h1>NesTPP: Modeling Information Diffusion in Online Discussion Forum</h1>
+<h2>NesTPP: Modeling Information Diffusion in Online Discussion Forum</h2>
 
 We study the online discussion forum that is generally tree-like in structure: a forum can contain several subforums. Within a subforum, each new discussion started is called a thread and can be replied by online users. A list of main threads and linked replies constitute the series of reply-trees. Each reply-tree is rooted in the main thread and joined by replies. In our intuition, the occurrence of a new main thread not only depends on the impact from all previous main threads but also from all the associated replies. Moreover, the generation of reply events relies on the influence of the linked main threads as well.
 
