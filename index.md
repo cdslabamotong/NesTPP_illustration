@@ -4,8 +4,10 @@ title: An illustration for NesTPP
 
 --------
 
-NesTPP: Modeling Information Diffusion in Online Discussion Forum
 ---
+
+<h1>NesTPP: Modeling Information Diffusion in Online Discussion Forum</h1>
+
 We study the online discussion forum that is generally tree-like in structure: a forum can contain several subforums. Within a subforum, each new discussion started is called a thread and can be replied by online users. A list of main threads and linked replies constitute the series of reply-trees. Each reply-tree is rooted in the main thread and joined by replies. In our intuition, the occurrence of a new main thread not only depends on the impact from all previous main threads but also from all the associated replies. Moreover, the generation of reply events relies on the influence of the linked main threads as well.
 
 Our data is the complete set of topic-related threads and associated replies retrieved from Reddit. We crawled data from the most popular subforums - Sports subforum. For the sports data, we select all main threads with replies related to the famous NBA player - LeBron James during the NBA Playoffs (April 2019) that attracts most of the attention in a season.
