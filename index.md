@@ -6,7 +6,7 @@ title: An illustration for NesTPP
 
 ---
 
-### DeepNest Preliminary Study 
+DeepNest Preliminary Study 
 
 This is a preliminary study of single topic DeepNest.
 
