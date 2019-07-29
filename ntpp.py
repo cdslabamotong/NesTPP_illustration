@@ -364,16 +364,15 @@ def test(params, main_stream_time_series, reply_stream_time_series, simulation_n
 
 prediction_total, prediction_total_reply = cross_validation(20)
 
-'''
+
 main_stream_time_series, reply_stream_time_series = generating_training_time_series(0, 1000)
 testing_main_stream, testing_reply_stream = generating_reply_time_series(1000, 20)
 
 params = mle(main_stream_time_series, reply_stream_time_series)
 print("\n###############################\n")
 print(params)
-'''
 
-'''
+
 print("Start simulation...")
 
 MAE_main = []
@@ -390,66 +389,4 @@ for i in range(10):
 print("The mean MAE is :", np.mean(MAE_main))
 
 
-cross_vali_list = []
-for i in range(0, 1600, 150):
-    cross_vali_list.append(i)
-
-mae_prediction = []
-for j in range(len(prediction_total)):
-    bb= []
-    aa = np.array(prediction_total[j][0])
-    testing_main_stream, testing_reply_stream = generating_reply_time_series(cross_vali_list[j+1], 20)
-    count = 1
-    for i in range(1, 100):
-        try:
-            aa += np.array(prediction_total[j][i])
-            count += 1
-        except:
-            coninue
-    aa = (aa/count).tolist()
-    for k in range(len(aa)):
-        bb.append(np.abs(aa[k]-testing_main_stream[k]))
-    mae_prediction.append(bb)
-
-mae = []
-for j in range(20):
-    temp = []
-    for i in range(len(mae_prediction)):
-            temp.append(mae_prediction[i][j])
-    mae.append(temp)
-
-mae_modify = np.array([np.mean(i) for i in mae])/3600
-
-
-for i in range(len(mae_modify)):
-    with open("Output.txt", "w") as text_file:
-        print(f"The Mean Absolute Error is {mae}: \n", file=text_file)
-
-
-
-mae_prediction_reply = []
-for j in range(len(prediction_total_reply)):
-    aa = np.array([len(i) for i in prediction_total_reply[j][0]])
-    testing_main_stream, testing_reply_stream = generating_reply_time_series(1500, 20)
-    testing_reply_stream = np.array([len(i) for i in testing_reply_stream])
-    for i in range(1, 100):
-        aa += np.array([len(i) for i in prediction_total_reply[j][i]])
-    aa = (aa/100)
-    
-    mae = np.abs(aa - testing_reply_stream)
-    print(mae)
-    mae_prediction_reply.append(mae)
-    
-tttt = []
-for j in range(20):
-    temp = []
-    for i in range(len(mae_prediction_reply)):
-            temp.append(mae_prediction_reply[i][j])
-    tttt.append(temp)
-    
-mae_modify_reply = np.array([np.mean(i) for i in tttt])
-
-
-print(mae_modify)
-'''
 
