@@ -18,6 +18,6 @@ Specifically, we apply cross-validation to measure the effectiveness of our mode
 
 <div style="text-align:center"><img src="https://s2.ax1x.com/2019/07/29/e8at9f.png" alt="figure1" width="600"/></div>   
 
-The code for reproducing the simulation result can be found [here](https://github.com/lingchen0331/NesTPP/blob/master/ntpp.py).
+The code for reproducing the simulation result can be found [here](https://github.com/cdslabamotong/NesTPP_illustration/blob/master/ntpp.py).
  
 
