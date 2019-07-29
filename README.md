@@ -4,7 +4,7 @@
 
 This study set out to examine the influence of the natural nested information structure in modeling the temporal dynamics of online discussion forum.
 
-[See the website for demonstration and documentation](https://lingchen0331.github.io/NesTPP_illustration/).
+[See the website for demonstration and documentation](https://cdslabamotong.github.io/NesTPP_illustration/).
 
 ## Contributor
 [Chen Ling](mailto:lingchen@udel.edu)   
